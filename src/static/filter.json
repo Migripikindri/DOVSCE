@@ -1,0 +1,35 @@
+{
+            "Type": "filters",
+            "Compact": true,
+            "Filters": {
+                //HELPERSTART
+                // pageName.grid must be the same name as the grid one
+                // "pageName.grid": {
+                //     "filterName": {
+                //         "DefaultFilter": true,
+                //         "Operator": "Between|Contains|DoesNotContain|EndsWith|Equal|Greater|GreaterOrEqual|In|Less|LessOrEqual|NotEqual|NotIn|NotNull|Null|StartsWith|...",
+                //         "FieldName": "datasourceFieldNameOrAlias"
+                //     }
+                // },
+                // "otherPageName.grid": {
+                //     "filterName": {
+                //         "DefaultFilter": true,
+                //         "Operator": "Between|Contains|DoesNotContain|EndsWith|Equal|Greater|GreaterOrEqual|In|Less|LessOrEqual|NotEqual|NotIn|NotNull|Null|StartsWith|...",
+                //         "FieldName": "datasourceFieldNameOrAlias"
+                //     }
+                // }
+                //HELPEREND
+                "pageName.grid": {
+//_filters,
+                }
+            },
+            "Children": {
+                //HELPERSTART
+                // "filterName": {
+                //     "Type": "checkbox|colorpicker|combobox|datepicker|emailbox|list|numberbox|password|radiobuttongroup|textbox|treeview|treeviewstandalone|...",
+                //     "Label": "sw_data_pageName_fieldname|SPE_BO_"
+                // }
+                //HELPEREND
+//_filtersChildren,
+            }
+        }

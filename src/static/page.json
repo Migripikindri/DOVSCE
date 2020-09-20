@@ -1,0 +1,71 @@
+//HEADERSTART 
+// Uncomment lines only if required in your config file. Otherwise, delete them.
+// Keep documentation URL link if needed.
+// Format the document if a bad indentation is noticed.
+
+// @Tips :
+// => Open URL
+//      CTRL+CLICK on url
+
+// => Delete ALL comments WITHOUT URL
+//      Select one double dash followed by a whitespace and press CTRL+SHIFT+L
+//      Then press CTRL+SHIFT+K
+
+// => Delete ALL comments WITH documention url
+//      Select one double dash and press CTRL+SHIFT+L
+//      Then press CTRL+SHIFT+K 
+//HEADEREND
+{
+    //DOCUMENTATIONSTART
+    //Config documention : https://weavy.divalto.com/doc/config/api/index.html
+    //Script documentation: https://weavy.divalto.com/doc/script/components/AvatarComponent.html
+    //Wiki documentation: 
+    //DOCUMENTATIONEND
+    "Type": "page",
+    "Title": "SPE_BO_PageNameNew",
+    //HELPERSTART
+    // "Title": {
+    //     "Label": "SPE_BO_Title",
+    //     "Children": {
+    //         "groupButtons": {
+    //             "Type": "group",
+    //             "Align": "right",
+    //             "Children": {
+    //                 "pageNameNew": {
+    //                     "Type": "link",
+    //                     "Label": "BO_New",
+    //                     "Link": {
+    //                         "Target": "pageName/new"
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // },
+    // "Conditions": [
+    //     {
+    //         "Name": "Profile.Available",
+    //         "Params": {
+    //             "variable": "PageName.id/new.show"
+    //         }
+    //     }
+    // ],
+    // "Events": { 
+    //     "AfterChildrenLoad": { 
+    //         "Script": "pageName.AfterChildrenLoad" 
+    //     } 
+    // },
+    //HELPEREND
+    "Children": {
+//_filter,
+//_crud,
+//_grid,
+        "pageNameNew": {
+            "Type": "link",
+            "Label": "BO_New",
+            "Link": {
+                "Target": "pageName/new"
+            }
+        }
+    }
+}

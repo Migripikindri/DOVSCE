@@ -1,0 +1,77 @@
+{
+	"name": "divalto-one",
+	"displayName": "divalto-one",
+	"description": "Divalto One Visual Studio Code extension",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.44.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"configuration": {
+			"title": "Divalto One",
+			"properties":{
+				"global.rootFolderName": {
+					"type": "string",
+					"default": "src",
+					"description": "Root folder name"
+				}
+			}
+		},
+		"commands": [
+			{
+				"command": "do.compose",
+				"title": "Divalto One : Compose"
+			},
+			{
+				"command": "do.build",
+				"title": "Divalto One : Build"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "do.compose",
+				"key": "ctrl+d ctrl+o",
+				"mac": "cmd+d cmd+o",
+				"when": "editorLangId == json || editorLangId == jsonc || editorLangId == typescript"
+			}
+		],
+		"snippets": [
+			{
+				"language": "json",
+				"path": "./snippets/component.json"
+			},
+			{
+				"language": "jsonc",
+				"path": "./snippets/component.json"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint src --ext ts",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.44.0",
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^7.0.2",
+		"@types/node": "^13.11.0",
+		"eslint": "^6.8.0",
+		"@typescript-eslint/parser": "^2.26.0",
+		"@typescript-eslint/eslint-plugin": "^2.26.0",
+		"glob": "^7.1.6",
+		"mocha": "^7.1.1",
+		"typescript": "^3.8.3",
+		"vscode-test": "^1.3.0"
+	}
+}

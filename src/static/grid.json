@@ -1,0 +1,55 @@
+{
+            "Type": "grid",
+            "DataSource": "pageName.grid",
+            //HELPERSTART
+            // Set LoadDataOnInit to true Only if no filter linked to this grid
+            // "LoadDataOnInit": true,
+            // "ExportExcel": true,
+            // "CurrentSort": {
+            //     "Field": "columnNameOfGrid",
+            //     "Dir": "asc"
+            // },
+            // "GroupBy": "datasourceFieldNameOrAlias",
+            // "ActionLinks": [
+            //     {
+            //         "Icon": "eye",
+            //         "Label": "SPE_BO_",
+            //         "Target": "pageName.preview/#=some_ID#",
+            //         "Mode": "Preview"
+            //     }
+            // ],
+            //HELPEREND
+            "Columns": {
+                //HELPERSTART
+                // "datasourceFieldNameOrAlias": {
+                //     "title": "sw_data_pageName_fieldname|SPE_BO_",
+                //     "type": "color|string|number|date|boolean|...",
+                //     "Primary": true,
+                //     "Sortable": false,
+                //     "Exportable": false,
+                //     "Sum": true,,
+                //     "count": true,
+                //     "FooterTemplate": "Gen_Total",
+                //     "GroupFooterTemplate": "BO_Subtotal",
+                //     "Link": {
+                //         "Target": "otherPage"
+                //     },
+                //     "Hidden": true,
+                //     "Width": 100
+                // },
+                // "iconExample": {
+                //     "title": " ",
+                //     "type": "string",
+                //     Check https://fontawesome.com/ to replace fa-something by an available one
+                //     "ColumnTemplate": "#= '<i class=\"fa fa-lg fa-cogs\"></i>' #",
+                //     "Link": {
+                //         "Target": "page/#=some_ID#"
+                //     },
+                //     "Width": 40,
+                //     "Sortable": false,
+                //     "Exportable": false
+                // }
+                //HELPEREND
+//_gridChildren,
+            }
+        }

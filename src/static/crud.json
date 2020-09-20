@@ -1,0 +1,57 @@
+{
+            "Type": "crud",
+            //HELPERSTART
+            // "CanInsert": true,
+            // "CanUpdate": {
+            //     "Conditions": [
+            //         {
+            //             "Name": "Profile.Available",
+            //             "Params": {
+            //                 "ProfileKey": "PageName.id.Update"
+            //             }
+            //         }
+            //     ]
+            // },
+            // "CanDelete": {
+            //   "Conditions": [
+            //     {
+            //       "Name": "Profile.Available",
+            //       "Params": {
+            //         "ProfileKey": "PageName.id.Delete"
+            //       }
+            //     }
+            //   ]
+            // },
+            // "Events": {
+            //     "BeforeInsert": {
+            //         "Script": "pageName.new.pageNameCrud.BeforeInsert"
+            //     },
+            //     "AfterInsert": {
+            //         "Script": "pageName.new.pageNameCrud.AfterInsert"
+            //     },
+            //     "BeforeUpdate": {
+            //         "Script": "pageName.id.pageNameCrud.BeforeUpdate"
+            //     },
+            //     "AfterUpdate": {
+            //         "Script": "pageName.id.pageNameCrud.AfterUpdate"
+            //     },
+            //     "BeforeDelete": {
+            //         "Script": "pageName.id.pageNameCrud.BeforeDelete"
+            //     },
+            //     "AfterDelete": {
+            //         "Script": "pageName.id.pageNameCrud.AfterDelete"
+            //     }
+            // },
+            // "DataSource": "pageName.table", A table datasource type
+            //HELPEREND
+            "DataSource": "pageName.table",
+            "Children": {
+                //HELPERSTART
+                // "fieldName": {
+                //     "Type": "textbox|numberbox|combobox|...",
+                //     "Label": "sw_data_pageName_fieldname|SPE_BO_"
+                // }
+                //HELPEREND
+//_crudChildren,
+            }
+        }
